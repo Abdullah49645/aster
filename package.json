@@ -1,0 +1,34 @@
+{
+  "name": "aster",
+  "version": "0.1.0",
+  "private": true,
+  "description": "ASTER — tactical recovery engine: Neural Pulse operational memory + deterministic network consequence engine + exact intervention optimizer.",
+  "license": "MIT",
+  "type": "module",
+  "engines": { "node": ">=20" },
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "pulse:probe": "tsx --env-file=.env.local scripts/pulse-probe.ts",
+    "pulse:setup": "tsx --env-file=.env.local scripts/setup-pulse.ts"
+  },
+  "dependencies": {
+    "@vercel/analytics": "^2.0.1",
+    "next": "^16.3.6",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.0",
+    "@types/react": "^19.1.0",
+    "@types/react-dom": "^19.1.0",
+    "tsx": "^4.23.15",
+    "typescript": "^5.9.0",
+    "vitest": "^5.0.2"
+  }
+}
