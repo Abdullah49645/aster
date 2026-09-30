@@ -1,6 +1,6 @@
 # ASTER
 
-Live Demo: aster-ten-kohl.vercel.app
+Live Demo: https://aster-ten-kohl.vercel.app/
 
 > **Built for the Evorozen Apex: NextGen AI Buildathon 2026** · Track: **Climate & Resource Optimization** · Powered by **Evorozen Neural Pulse**
 >
