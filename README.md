@@ -127,14 +127,14 @@ All figures below come from running the engine on the seeded incident. They are 
 
 ```mermaid
 flowchart LR
-  UI[Next.js client<br/>Overview, Live state,<br/>Interventions, Evidence] -- report --> API[/api/observations]
-  API --> I[interpret<br/>Pulse chat or rules]
-  I --> R[resolve<br/>Pulse vector_search]
-  R --> L[(Pulse ledger<br/>aster_observations)]
-  L --> F[deterministic fold]
-  F --> S[(Pulse state<br/>aster_entity_state<br/>aster_transitions)]
+  UI["Next.js client<br/>Overview, Live state,<br/>Interventions, Evidence"] -- report --> API["/api/observations"]
+  API --> I["interpret<br/>Pulse chat or rules"]
+  I --> R["resolve<br/>Pulse vector_search"]
+  R --> L[("Pulse ledger<br/>aster_observations")]
+  L --> F["deterministic fold"]
+  F --> S[("Pulse state<br/>aster_entity_state<br/>aster_transitions")]
   S --> UI
-  UI --> E[engine in the browser<br/>network + optimizer + explain]
+  UI --> E["engine in the browser<br/>network + optimizer + explain"]
 ```
 
 The engine (`src/engine`) is pure TypeScript with no I/O. It runs on the server (to report "recommendation before and after" in each pipeline trace) and in the browser (so constraint changes recompute instantly without a network round trip). Both use the same code.
